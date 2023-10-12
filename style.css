@@ -16,6 +16,8 @@ body {
 
 .formulario {
   text-align: center;
+  direction: flex;
+  position: relative;
 }
 
 button {
@@ -30,6 +32,7 @@ button {
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
+  font-size: clamp(3px, 3vw, 18px);
 }
 
 input {
@@ -37,6 +40,7 @@ input {
   width: 15%;
   margin-top: 5px;
   border-radius: 3px;
+  font-size: clamp(3px, 3vw, 18px);
 }
 
 img {
@@ -44,4 +48,15 @@ img {
   width: 30%;
   text-align: center;
   margin-bottom: 30px;
+}
+
+#nota {
+  color: red;
+
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+#concluido {
+  color: green;
 }
